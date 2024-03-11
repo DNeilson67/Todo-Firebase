@@ -25,7 +25,9 @@ function account() {
   function updateNewPassword(e){
     e.preventDefault();
     if (newPassword.length < 8) {document.getElementById("error_modal").showModal();}
-    else updatePassword(user, newPassword);
+    else {
+      updatePassword(user, newPassword)
+    logOut();};
   }
 
   function updateUsername(e){
